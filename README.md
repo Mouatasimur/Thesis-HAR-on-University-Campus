@@ -35,3 +35,12 @@ Each model was trained for **25 epochs**, with performance evaluated using metri
 2. **Clone this Repository**: Use the following command to clone the repository and load the project files:
    ```bash
    !git clone <repository-link>
+
+
+## Dependencies
+
+- **TensorFlow**: For building and training the models.
+- **Keras**: For neural network API implementation.
+- **NumPy**: For numerical computations.
+- **OpenCV**: For image processing and data augmentation.
+- **Matplotlib**: For visualizing results and training progress.

@@ -1,0 +1,45 @@
+16/16 ━━━━━━━━━━━━━━━━━━━━ 5s 332ms/step - accuracy: 0.9674 - loss: 0.1500
+Accuracy on test: 0.9700000286102295
+Loss on test set: 0.18531200289726257
+
+
+[INFO] evaluating network...
+16/16 ━━━━━━━━━━━━━━━━━━━━ 8s 413ms/step
+                precision    recall  f1-score   support
+
+       Calling       1.00      0.98      0.99        59
+      Cheating       0.95      1.00      0.97        36
+      Climbing       1.00      1.00      1.00        48
+     Consuming       0.92      1.00      0.96        54
+LisentingMusic       0.93      0.86      0.89        58
+       Sitting       0.95      1.00      0.98        41
+      Standing       0.96      0.94      0.95        48
+      Studying       1.00      0.94      0.97        51
+       Talking       1.00      1.00      1.00        52
+      Teaching       1.00      1.00      1.00        53
+
+      accuracy                           0.97       500
+     macro avg       0.97      0.97      0.97       500
+  weighted avg       0.97      0.97      0.97       500
+
+
+Accuracy on fold 1: 0.9779999852180481
+Loss on fold 1: 0.043731700628995895
+Fold 2/5
+Accuracy on fold 2: 0.9819999933242798
+Loss on fold 2: 0.11675118654966354
+Fold 3/5
+Accuracy on fold 3: 0.9739999771118164
+Loss on fold 3: 0.1585369110107422
+Fold 4/5
+Accuracy on fold 4: 0.9380000233650208
+Loss on fold 4: 0.3976200819015503
+Fold 5/5
+
+MEAN Accuracy on fold : 96.20000123977661%
+MEAN Loss on fold : 0.30160000920295715
+
+
+loss,test_accuracy = model.evaluate(testX, testY)
+print('Accuracy on test:', test_accuracy)
+print('Loss on test set:', loss)
